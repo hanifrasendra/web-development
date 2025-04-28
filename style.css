@@ -73,6 +73,7 @@ h1 {
     color: aliceblue;
     background-color: transparent;
     width: 60%;
+    z-index: 1;
 
     
     
@@ -81,7 +82,7 @@ h2 {
     color: aliceblue;
     font-family: "Prompt", "sans-serif";
     font-weight: 600;
-    font-size: 35px;
+    font-size: 40px;
 }
 .content p{
     font-weight: 200;
@@ -108,11 +109,12 @@ h2 {
     position: absolute;
     top: 0;
     bottom: 20%;
-    left: 30%;
+    left: 15%;
     right: 20%;
-    width: 100%;
-    height: 100%;
-    transform: scale(60%);
+    width: 110%;
+    height: 110%;
+    transform: scale(70%);
+    z-index: 0;
 }
 .user-bio {
     padding-left: 10%;
@@ -125,4 +127,23 @@ h2 {
     width: 500px;
     border-radius: 10px;
     box-shadow: 1px;
+}
+
+@media only screen and (max-width: 767px)  {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spline-3D {
+        position: absolute;
+        top: 0;
+        bottom: 20%;
+        right: 20;
+        width: 110%;
+        height: 110%;
+        transform: scale(50%);
+        z-index: 0;
+    }
+    
 }
