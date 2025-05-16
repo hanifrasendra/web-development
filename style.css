@@ -159,8 +159,11 @@ h2 {
         z-index: 0;
     }
 
+    .grid-container {
+        margin-top: 350px;
+    }
+
     .user-bio {
-        margin-top: 300px;
         padding-left: 0;
     }
     .user-bio article {
